@@ -129,3 +129,6 @@ npm run dev
 	- Install Bootstrap in the frontend project and import it into `src/main.jsx`
 
 If you want any of the above automated, tell me which one to do next.
+
+#boostrap class name documetnaiotn
+#python manage.py migreate
