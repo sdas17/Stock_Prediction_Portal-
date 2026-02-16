@@ -1,13 +1,19 @@
 import "./assets/css/style.css"
-import Footer from "./component/Footer"
-import Header from "./component/Header"
+
 import Main from "./component/Main"
+import Register from "./component/Register"
+import {BrowserRouter,Routes,Route} from "react-router-dom"
 function App() {
   return (
     <>
-    <Header/>
-    <Main/>
-    <Footer/>
+ 
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Main/>}></Route>
+      <Route path="/register" element={<Register/>}></Route>
+    </Routes>
+    </BrowserRouter>
+   
     
     </>
   )
