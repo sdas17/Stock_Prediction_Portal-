@@ -13,7 +13,7 @@ const Main = () => {
            <h1 className='text-light'>Stock Prediction Portal</h1>
            <p className='text-light lead'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat modi vero odit magnam reprehenderit dolores illum ullam est? Omnis sapiente aperiam distinctio a laboriosam obcaecati debitis eos recusandae? Debitis, quas.</p>
            
-             <a className='btn btn-outline-warning' href='#'>Login</a>
+             <a className='btn btn-outline-warning' href='#'>Explore page</a>
 
         </div>
     </div>

@@ -8,6 +8,9 @@ const Header = () => {
   console.log(islogged,'8');
   
   const navigate = useNavigate();
+  const handleNavigate = ()=>{
+    navigate("/dashboard")
+  }
 
   const handleLogout = () => {
     localStorage.removeItem("access");
@@ -25,12 +28,22 @@ const Header = () => {
 
       <div>
         {islogged ? (
-          <button
+          <>
+           <button
             className='btn btn-danger'
             onClick={handleLogout}
           >
             Logout
           </button>
+           <button
+            className='btn btn-primary'
+            onClick={handleNavigate}
+          >
+            Explore Dashboard
+          </button>
+          </>
+         
+          
         ) : (
           <>
             <Link className='btn btn-outline-info' to="/login">

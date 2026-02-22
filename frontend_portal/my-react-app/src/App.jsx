@@ -7,6 +7,8 @@ import Footer from "./component/Footer"
 import Header from "./component/Header"
 import Login from "./component/Login"
 import AuthsProvider from "./component/auth/AuthsProvider"
+import Dashboard from "./component/Dashboard"
+
 function App() {
   return (
     <AuthsProvider>
@@ -17,6 +19,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard/>}></Route>
       </Routes>
 
       <Footer />
