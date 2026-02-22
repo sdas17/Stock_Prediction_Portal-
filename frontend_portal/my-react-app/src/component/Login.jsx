@@ -27,7 +27,7 @@ const [loading, setloading] = useState(false);
     );
     localStorage.setItem("access", response.data.access);
       localStorage.setItem("refresh", response.data.refresh);
-    router("/")   
+    router("/dashboard")   
       setIslogges(true)
 
     

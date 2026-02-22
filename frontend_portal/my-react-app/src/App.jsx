@@ -8,6 +8,8 @@ import Header from "./component/Header"
 import Login from "./component/Login"
 import AuthsProvider from "./component/auth/AuthsProvider"
 import Dashboard from "./component/Dashboard"
+import PrivateRoute from "./component/auth/Router/Privateroute"
+import Publicroute from "./component/auth/Router/Publicroute"
 
 function App() {
   return (
@@ -17,9 +19,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Dashboard/>}></Route>
+        <Route path="/register" element={<Publicroute><Register /></Publicroute>} />
+          <Route path="/login" element={<Publicroute><Login /></Publicroute>} />
+          <Route path="/dashboard" element={<PrivateRoute><Dashboard/></PrivateRoute>}></Route>
       </Routes>
 
       <Footer />
